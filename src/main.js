@@ -7,6 +7,7 @@ import router from './router/index';
 
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
+// Angular9
 // function genActiveRule(urlList) {
 //   return (location) => {
 //     console.log("aaa")
@@ -25,23 +26,21 @@ const apps = [
     entry: '//localhost:10000',
     container: '#vue',
     activeRule: '/vue',
+    // props: {a:1}
   },
   {
     name: 'reactApp',
-    entry: '//localhost:12000', //默认会加载这个html，解析里面的js动态执行（子应用需要解决跨域）fetch
+    entry: '//localhost:20000', //默认会加载这个html，解析里面的js动态执行（子应用需要解决跨域）fetch
     container: '#react',
     activeRule: '/react',
   },
-
-
   {
     name: 'inspect',
-    entry: '//localhost:9063',
+    // entry: '//localhost:9063',
+    entry: '//localhost',
     container: '#inspect',
-
-    activeRule: '/inspect'//genActiveRule(['/inspect']),
-  }
-
+    activeRule: '/inspect', //genActiveRule(['/inspect']), Angular9
+  },
 ];
 registerMicroApps(apps); //注册应用
 // start();
