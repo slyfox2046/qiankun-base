@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <el-menu :router="true" mode="horizontal">
+      <!-- 基座中可以放自己的路由 -->
+      <el-menu-item index="/home">Home</el-menu-item>
+      <!-- 应用其它子应用 -->
+      <el-menu-item index="/vue">Vue应用</el-menu-item>
+      <el-menu-item index="/react">React应用</el-menu-item>
+      <el-menu-item index="/inspect">Angularjs应用</el-menu-item>
+    </el-menu>
+    <router-view></router-view>
+    <div id="vue"></div>
+    <div id="react"></div>
+    <div id="inspect"></div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+
+  export default {
+    name: 'App',
+
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
