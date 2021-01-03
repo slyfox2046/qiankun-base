@@ -35,11 +35,18 @@ const apps = [
     activeRule: '/react',
   },
   {
-    name: 'inspect',
+    name: 'app',
     // entry: '//localhost:9063',
-    entry: '//localhost',
+    entry: '//localhost:81',
     container: '#inspect',
     activeRule: '/inspect', //genActiveRule(['/inspect']), Angular9
+  },
+  {
+    name: 'diag',
+    // entry: '//localhost:9063',
+    entry: '//localhost:80',//window ip
+    container: '#subapp-viewport',
+    activeRule: '/trans-diag', //genActiveRule(['/inspect']), Angular9
   },
 ];
 registerMicroApps(apps); //注册应用
