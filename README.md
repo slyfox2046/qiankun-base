@@ -1,5 +1,5 @@
 # qiankun-base
-Vue 基座 ，子应用 Angularjs 1.4
+Vue 基座 ，子应用 Angularjs1.4
 
 ## Project setup
 ```
