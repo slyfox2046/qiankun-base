@@ -2,6 +2,8 @@
 Vue 基座 ，子应用 Angularjs1.4
 https://github.com/slyfox2046/qiankun-ng1
 
+进入各个模块  npm run 起来
+
 ## Project setup
 ```
 npm install
