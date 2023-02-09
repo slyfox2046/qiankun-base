@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    Home Vue
+    Home Vue base
   </div>
 </template>
 

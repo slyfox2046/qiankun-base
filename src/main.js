@@ -48,6 +48,13 @@ const apps = [
     container: '#subapp-viewport',
     activeRule: '/trans-diag', //genActiveRule(['/inspect']), Angular9
   },
+  {
+    name: 'alarm',
+    // entry: '//localhost:9063',
+    entry: '//localhost:82',//window ip
+    container: '#subapp-viewport',
+    activeRule: '/trans-alarm', //genActiveRule(['/inspect']), Angular9
+  },
 ];
 registerMicroApps(apps); //注册应用
 // start();

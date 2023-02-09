@@ -4,10 +4,11 @@
       <!-- 基座中可以放自己的路由 -->
       <el-menu-item index="/home">Home</el-menu-item>
       <!-- 应用其它子应用 -->
-      <!-- <el-menu-item index="/vue">Vue应用</el-menu-item>
-      <el-menu-item index="/react">React应用</el-menu-item> -->
+      <el-menu-item index="/vue">Vue应用</el-menu-item>
+      <el-menu-item index="/react">React应用</el-menu-item>
       <el-menu-item index="/inspect">Angularjs应用</el-menu-item>
       <el-menu-item index="/trans-diag">诊断</el-menu-item>
+      <el-menu-item index="/trans-alarm">告警</el-menu-item>
     </el-menu>
 
 
